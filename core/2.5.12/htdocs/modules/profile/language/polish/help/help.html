@@ -1,0 +1,62 @@
+<div id="help-template" class="outer">
+    <h1 class="head">Pomoc: <a class="ui-corner-all tooltip" href="<{$xoops_url}>/modules/profile/admin/index.php" title="Powrót do administracji profilem"> Profil <img src="<{xoAdminIcons 'home.png'}>" alt="Powrót do administracji profilem"/></a></h1>
+    <!-- -----Treść pomocy ---------- -->
+    <h4 class="odd">OPIS</h4>
+
+    <p class="even">Moduł Profil służy do zarządzania niestandardowymi polami profilu użytkownika.</p>
+    <h4 class="odd">INSTALACJA/DEINSTALACJA</h4>
+
+    <p>Nie są wymagane żadne specjalne środki, postępuj zgodnie ze standardowym procesem instalacji – rozpakuj folder /profile do katalogu ../modules. Zainstaluj moduł przez Admin -> Moduł systemowy -> Moduły.</p>
+
+    <p>Szczegółowe instrukcje dotyczące instalacji modułów są dostępne w <a href="https://www.gitbook.com/book/xoops/xoops-operations-guide/" target="_blank" title="Podręcznik operacyjny XOOPS">Podręczniku operacyjnym XOOPS</a> <br><br></p>
+    <h4 class="odd">INSTRUKCJE OBSŁUGI</h4>
+
+    <p class="even">Aby skonfigurować ten moduł, musisz:</p>
+    <ul>
+        <li>Skonfigurować preferencje modułu (patrz „Preferencje”) oraz opcjonalnie blok Profil, jeśli zamierzasz go używać (patrz „Bloki”).</li>
+        <li>Edytować istniejące kategorie lub dodać nowe.</li>
+        <li>Edytować istniejące pola lub dodać nowe. Tutaj możesz określić, które pola będą widoczne w której kategorii oraz czy będą widoczne podczas rejestracji użytkownika.</li>
+        <li>Zdefiniować kolejność kroków rejestracji.</li>
+        <li>Na koniec możesz ustawić uprawnienia dla poszczególnych pól – które są edytowalne, które można przeszukiwać.<br><br></li>
+    </ul>
+    <h4 class="odd">Środki antyspamowe</h4>
+
+    <p class="even">Aby zminimalizować rejestracje spamowe, wykonaj następujące kroki:</p>
+
+    <ul>
+        <li>Przejdź do modułu Protector w panelu administracyjnym, przejdź do Preferencji, a następnie na dole, przy tej opcji:
+
+            „Stop Forum Spam”
+            Sprawdza dane POST w odniesieniu do spamerów zarejestrowanych w bazie danych www.stopforumspam.com. <br>
+            Ustaw na „Zablokuj IP (bez ograniczeń)”
+        </li>
+        <br>
+
+        <li>W pliku /class/captcha/config.php upewnij się, że tryb jest ustawiony na „text”:<br><br>
+
+            <span style="font-style: italic;">     return $config = array(<br>
+    'disabled' => false, // Wyłącz CAPTCHA<br>
+    'mode' => 'text', // domyślny tryb, możesz wybrać 'text', 'image', 'recaptcha' (wymaga klucza API)<br>
+    'name' => 'xoopscaptcha', // nazwa CAPTCHA<br>
+    'skipmember' => true, // Pomiń sprawdzanie CAPTCHA dla członków<br>
+    'maxattempts' => 10, // Maksymalna liczba prób na sesję<br>
+    );</span></li>
+        <br>
+
+        <li>W module Profil przejdź do panelu administracyjnego i w kroku podstawowym znajdującym się pod adresem:<br>
+
+            /modules/profile/admin/step.php?id=1<br>
+
+            ustaw opcję „Zapisz po zatrzymaniu” na „Nie”
+        </li>
+        <br><br>
+
+        <li>W Preferencjach modułu Profil ustaw opcję „Użyj CAPTCHA po drugim kroku rejestracji” na „Tak” (jest to ustawienie domyślne)</li>
+        <br>
+        <ul>
+
+            <h4 class="odd">SAMOUCZEK</h4>
+
+            <p class="even">Samouczek wkrótce będzie dostępny.<br></p>
+            <!-- -----Treść pomocy ---------- -->
+</div>

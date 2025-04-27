@@ -9,5 +9,4 @@ Możesz się teraz zalogować, korzystając z poniższego adresu URL i hasła po
 -----------
 {SITENAME} ({SITEURL})
 Administrator
-{ADMINMA
-IL}
+{ADMINMAIL}

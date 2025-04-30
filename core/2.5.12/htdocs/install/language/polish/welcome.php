@@ -19,7 +19,7 @@ $content = '
 <h3>Wymagania</h3>
 <ul>
     <li>Serwer WWW (<a href="https://www.apache.org/" rel="external">Apache</a>, <a href="https://www.nginx.com/" rel="external">NGINX</a>, IIS, itd.)</li>
-    <li><a href="https://www.php.net/" rel="external">PHP</a> 5.6.0 lub nowszy, zalecana wersja 7.3+</li>
+    <li><a href="https://www.php.net/" rel="external">PHP</a> 7.4 lub nowszy, zalecana wersja 7.3+</li>
     <li><a href="https://www.mysql.com/" rel="external">MySQL</a> 5.5 lub nowszy, zalecana wersja 5.7+</li>
 </ul>
 <h3>Przed instalacją</h3>

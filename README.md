@@ -36,3 +36,5 @@ XoopsLanguages/
 ----- themes
 ```
 Note: You can use "foo" directory example. Copy and rename it.
+
+HOW INSTALL THIS >?>??

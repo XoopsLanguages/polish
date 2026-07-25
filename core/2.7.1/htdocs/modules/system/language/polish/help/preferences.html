@@ -1,0 +1,70 @@
+<div id="help-template" class="outer">
+
+    <h1 class="head">Pomoc: Preferencje</h1>
+    <h4 class="odd">Opis</h4>
+
+    <p class="even">
+        Panele preferencji służą do konfigurowania preferencji dla całej witryny. Warto poświęcić czas na ich przejrzenie, ponieważ niektóre ustawienia mogą mieć znaczący wpływ na wydajność, bezpieczeństwo i łatwość użytkowania Twojej witryny.
+    </p>
+    <h4 class="odd">Ustawienia ogólne</h4>
+
+    <p class="even">
+        Są to najważniejsze i najczęściej używane preferencje. Ustawisz nazwę witryny i slogan dla swojej strony internetowej. Wybierzesz również domyślny motyw i GUI administratora. A jeśli chcesz pracować nad swoją stroną internetową, możesz ją zamknąć dla wszystkich użytkowników. Możesz również ustawić czasy pamięci podręcznej dla modułu.
+    </p>
+
+    <h4 class="odd">Tagi Meta i Stopka</h4>
+
+    <p class="even">
+        Tagi meta dostarczają informacji o Twoich informacjach – opisują charakter Twojej strony internetowej. Ich głównym celem jest pomoc wyszukiwarkom i ich robotom w prawidłowym indeksowaniu Twojej strony internetowej, tj. pomoc właściwym osobom w jej znalezieniu. Podane przez Ciebie informacje są zawarte w nagłówku każdej strony internetowej. Powinny reprezentować zawartość strony jako całości – informacje meta są takie same na każdej stronie, obecnie nie można ich dostosowywać dla różnych modułów lub stron.<br><br>
+
+        Pamiętaj, że główne wyszukiwarki stosują różne strategie indeksowania stron internetowych. Mogą przykładać różną wagę do tagów meta, a nawet całkowicie je ignorować. Ostrożne korzystanie z meta informacji może pomóc Twojej stronie internetowej w uzyskaniu lepszych pozycji w wyszukiwarkach, a warto poszukać informacji o strategiach indeksowania dominujących odsyłaczy (zobacz plik dziennika swojej strony internetowej). Może to pomóc w optymalizacji meta informacji lub innych aspektów projektu i zawartości witryny w celu poprawy pozycji.<br><br>
+
+        Staraj się być dokładnym i uczciwym, podając meta informacje. Nie próbuj „<em>manipulować</em>” wyszukiwarkami, aby uzyskać lepszą pozycję – mogą one rozpoznać to zachowanie, a Twoja strona może zostać zdegradowana lub umieszczona na czarnej liście w ich indeksie.
+
+        <br><br>Pola <strong>Meta Copyright</strong> i <strong>Stopka</strong> obsługują dwa tagi zastępcze, aby uprościć konserwację.
+        <br>&nbsp;- <strong>{X_SITEURL}</strong> zostanie zastąpione pełnym adresem URL do strony głównej Twojej witryny.
+        <br>&nbsp;- <strong>{X_YEAR}</strong> zostanie zastąpione bieżącym czterocyfrowym rokiem. Eliminuje to konieczność aktualizacji górnej daty praw autorskich każdego roku.
+    </p>
+
+    <h4 class="odd">Opcje cenzurowania słów</h4>
+
+    <p class="even">
+        XOOPS może automatycznie cenzurować niepożądane słowa, które mogą być publikowane przez odwiedzających Twoją witrynę, i zastępować je ogólnym, alternatywnym terminem wybranym przez Ciebie. Funkcja cenzury zużywa pewne zasoby systemowe i może nieco spowolnić działanie Twojej witryny. Domyślnie jest wyłączona.<br><br>
+
+        Aby wdrożyć cenzurę na swojej stronie, wybierz przycisk opcji „<em>włącz</em>”. Musisz wprowadzić listę niechcianych słów w polu „<em>słowa do ocenzurowania</em>”, oddzielając je znakiem potoku. Ta funkcja nie uwzględnia wielkości liter. Wprowadź odpowiedni termin zastępczy w polu „<em>zastąp brzydkie słowa przez</em>”. Domyślna wartość to #OOPS#.
+
+    </p>
+
+    <h4 class="odd">Opcje wyszukiwania</h4>
+
+    <p class="even">
+        Funkcja wyszukiwania jest jednym z najważniejszych narzędzi do lokalizowania informacji w witrynie portalu. Wyszukiwanie XOOPS kategoryzuje wyniki według modułu – rekordy są identyfikowane jako artykuły, pliki do pobrania, linki lub inne typy, zgodnie z zainstalowanymi modułami.<br><br>
+
+        Globalne wyszukiwanie wszystkich zasobów w Twojej witrynie jest domyślnie włączone. Jeśli wyłączysz wyszukiwanie globalne, ta funkcja nie będzie już dostępna, a blok wyszukiwania przestanie działać.
+        Domyślna minimalna długość słowa kluczowego dla wyszukiwań to pięć znaków. Wszystkie krótsze terminy zostaną zignorowane. Jest to przydatne do kontrolowania precyzji wyszukiwań, choć niezbyt przydatne w przypadku terminów takich jak „mapa witryny”. Krótkie słowa kluczowe są zwykle bardziej powszechne, więc zwykle zwracają większą liczbę rekordów, z których wiele może być nieistotnych. Dłuższe słowa kluczowe zwykle pobierają mniej rekordów, ale z większym stopniem precyzji.<br><br>
+
+        Wyszukiwanie jest stosunkowo kosztowne pod względem obliczeniowym, więc wykluczenie krótkich terminów zmniejszy obciążenie serwera. Należy jednak pamiętać, że czasami przydatne jest wyszukiwanie krótkiego terminu.
+
+    </p>
+
+    <h4 class="odd">Ustawienia e-mail</h4>
+
+    <p class="even">
+        Ta sekcja panelu sterowania służy do konfigurowania poczty e-mail dla systemu. Zaleca się pozostawienie Metody Dostarczania E-maila na domyślnym ustawieniu „PHP (mail)”. Nie musisz wypełniać pól Sendmail lub SMTP, chyba że używasz alternatywnej opcji dostarczania poczty e-mail.
+    </p>
+
+    <h4 class="odd">Opcje uwierzytelniania</h4>
+
+    <p class="even">
+        Po prostu pozostaw to na Bazie Danych Xoops i możesz zignorować wszystkie inne opcje.<br><br>
+
+        Serwery LDAP lub Microsoft Active Directory zostały dodane do uwierzytelniania jako alternatywa dla normalnych użytkowników Xoops. Powodem jest to, że w wielu firmach masz już bazę danych użytkowników w ADS lub LDAP i mogą jej używać do logowania się do XOOPS i nie muszą rejestrować kolejnego konta.
+    </p>
+
+    <h4 class="odd">Ustawienia modułu System</h4>
+
+    <p class="even">
+        Tutaj możesz aktywować/dezaktywować każdą z sekcji Systemu, a także określić domyślne ustawienia dla całego systemu, np. liczbę wyświetlanych awatarów lub obrazów na stronie. Możesz również wybrać domyślny edytor dla bloków, komentarzy i dla wszystkich modułów.
+    </p>
+
+</div>

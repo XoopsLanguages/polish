@@ -1,0 +1,33 @@
+<div id="help-template" class="outer">
+    <h1 class="head">Pomoc: Szablony</h1>
+
+    <h4 class="odd">Opis</h4>
+
+    <p class="even">
+        XOOPS umożliwia pewne oddzielenie rzeczywistej prezentacji strony (tzw. „<em>skórki</em>” lub interfejsu użytkownika) od kodu działającego w tle. Pierwszy z nich jest obsługiwany przez zaawansowany mechanizm oparty na graficznych motywach. Motyw może zawierać w swojej podstawowej formie podstawowe szablony HTML, które definiują interfejs wizualny strony, a także arkusze stylów i obrazy potrzebne do uzupełnienia tego interfejsu wizualnego. Motywy można przełączać w interfejsie administracyjnym, więc zmiana całego wyglądu strony XOOPS sprowadza się jedynie do zmiany wartości selektora i kliknięcia „Akceptuj”. XOOPS zapewnia również administratorom witryn możliwość wyboru przez użytkowników spośród dostępnych motywów.<br><br>
+
+        Ogólnie rzecz biorąc, <strong><em>motyw</em></strong> to wysokopoziomowa wizualna struktura strony: motyw definiuje na przykład ogólny układ strony; z drugiej strony, zwykle nie definiuje konkretnego rozmieszczenia zawartości w bloku. Tym zajmuje się inna jednostka zwana <em><strong>zestawem szablonów</strong></em>. Zestaw szablonów<em> </em>to zbiór szablonów HTML, które definiują prezentację zawartości we wszystkich blokach tworzących stronę XOOPS. Jeśli chcemy użyć bardziej jasnej metafory, moglibyśmy powiedzieć, że motyw jest jak architekt domu, a zestaw szablonów jest jak dekorator wnętrz. Pierwszy z nich stawia ściany i definiuje ogólny układ, ale to drugi odpowiada za „<em>ubieranie</em>” tych ścian.<br><br>
+
+        Jeśli aktywny motyw jest prosty i zawiera tylko plik motywu, pliki CSS i kilka obrazów, XOOPS używa domyślnego zestawu szablonów do zdefiniowania prezentacji bloków. Jednak niektóre złożone motywy są na tyle zaawansowane, że zawierają własny zestaw szablonów. W takim przypadku administrator witryny musi użyć interfejsu administracyjnego, aby ustawić zarówno motyw, jak i zestaw szablonów. <br><br>
+
+        Jak osiągana jest <em>magia</em> motywu? To znaczy, jak szablony HTML mogą zawierać dynamiczną zawartość? Odbywa się to nie za pomocą luster i dymu, ale za pomocą sprytnego silnika szablonów zwanego
+        <strong><a rel="external" href="https://www.smarty.net/">Smarty</a></strong>, który umożliwia funkcję zwaną kiedyś
+        <em><strong>interpolacją zmiennych</strong></em>. Mówiąc w prosty sposób, moglibyśmy powiedzieć, że system XOOPS używa plików PHP do przechowywania logiki modułów (dostęp do bazy danych, alokacja zmiennych, zarządzanie uprawnieniami...), plików HTML z wstawionymi zmiennymi Smarty do zarządzania rzeczywistym interfejsem wizualnym, oraz silnika Smarty do wstawiania wartości i ciągów znaków w określonych miejscach w HTML, który buduje strony oglądane przez użytkownika końcowego. Podsumowując, oznacza to dla Ciebie: dzięki systemowi motywów XOOPS pozwala projektantom stron budować bardziej interesujące i oszałamiające wizualnie strony bez większych obaw o to, co dzieje się pod maską.
+    </p>
+    <h4 class="odd">Klonowanie i pobieranie zestawów szablonów</h4>
+
+    <p class="even">
+        Jeśli chcesz utworzyć niestandardowy zestaw szablonów, możesz utworzyć kopię domyślnego zestawu (lub dowolnego innego), wybierając link „<em>klonuj</em>” (zostaniesz poproszony o nadanie nowemu zestawowi nazwy). W przeciwieństwie do domyślnego, inne zestawy szablonów można swobodnie edytować. Możesz również zapisać kopię zestawu szablonów na dysku, wybierając link „<em>pobierz</em>”, lub usunąć go za pomocą linku „<em>usuń</em>”. Czasami możesz również zobaczyć dodatkowy link „<em>Generuj</em>” obok nowych modułów, dla których nie utworzono jeszcze szablonów.
+    </p>
+
+    <h4 class="odd">Edycja szablonów</h4>
+
+    <p class="even">
+        Pełną listę dostępnych szablonów można zobaczyć, przeglądając drzewo katalogów. Po wybraniu szablonu XOOPS otworzy go w edytorze, w którym możesz go edytować.<br><br>
+
+        Podczas edycji szablonów musisz włączyć preferencję, która automatycznie aktualizuje pliki szablonów modułów .tpl, jeśli istnieją nowsze pliki w katalogu themes/twój motyw/templates dla bieżącego motywu (Moduł System -> Preferencje -> Ustawienia ogólne -> Aktualizuj pliki szablonów modułów .tpl z katalogu themes/twój motyw/templates? -> „<em>Tak</em>”). Powinno to zostać wyłączone, gdy strona stanie się publiczna.<br><br>
+        Jeśli przypadkowo zepsujesz szablon, nie zapomnij, że możesz pobrać „<em>dobrą</em>” kopię z domyślnego zestawu szablonów. Jeśli pracujesz z niestandardowymi szablonami, dobrym pomysłem może być zapisanie kopii na dysku przed rozpoczęciem ich modyfikowania.
+
+    </p>
+
+</div>
